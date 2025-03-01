@@ -12,8 +12,8 @@ const makeCommit = async (n) => {
     return;
   }
 
-  const startDate = moment('2024-01-01');
-  const endDate = moment('2025-03-01');
+  const startDate = moment('2024-11-01');
+  const endDate = moment('2024-12-31');
   const randomDays = random.int(0, endDate.diff(startDate, 'days'));
   const DATE = startDate.clone().add(randomDays, 'days').format();
 
